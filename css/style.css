@@ -26,12 +26,11 @@ html, body{
     padding-right: 15px;
     position: relative;
   }
-  @media (min-width: 320px) {
+  @media (min-width: 768px) {
     .hero {
-      width:310px;
+      width:750px;
     }
   }
-
   .container {
     margin-right: auto;
     margin-left: auto;
