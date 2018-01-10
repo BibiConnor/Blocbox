@@ -31,8 +31,9 @@
   background: #FFFFFF;
      box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.30);
      border-radius: 4px;
+
 }
-.dropit .dropit-open .dropit-submenu:after {
+.dropit .dropit-open .dropit-submenu::after {
   content: " ";
   position: absolute;
   border-style: solid;
@@ -56,4 +57,8 @@
   text-decoration: none;
   font-family: "Lato", Helvetica, Arial, sans-serif;
   font-weight:100;
+ }
+ .setting-dropdown {
+   
+
  }
