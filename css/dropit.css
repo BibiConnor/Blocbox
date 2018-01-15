@@ -9,7 +9,7 @@
 
 /* These styles assume you are using ul and li */
 .dropit {
-    list-style: none;
+  list-style: none;
 	padding: 0;
   margin: 15px 0 0;
   float:right;
@@ -24,16 +24,42 @@
     display: none;
     min-width: 100px;
     list-style: none;
-	padding: 20px;
-	margin: 20px 0 0;
+	  padding: 20px;
+	  margin: 20px 0 0;
 }
-.dropit .dropit-open .dropit-submenu { display: block;
-  background: #FFFFFF;
+
+.dropit .dropit-open .dropit-submenu {
+  display: block;
+     background: #FFFFFF;
      box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.30);
      border-radius: 4px;
-
 }
-.menu.dropit .dropit-open .dropit-submenu::after {
+
+#menu-settings {
+  display: block;
+     background: #FFFFFF;
+     box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.30);
+     border-radius: 4px;
+  bottom: 100%;
+  top:inherit;
+}
+
+#menu-settings::after {
+  content: " ";
+  position: absolute;
+  border-style: solid;
+  border-width: 9px 8px 0px;
+  border-color: #FFFFFF transparent;
+  display: block;
+  width: 0;
+  z-index: 1;
+  top: 154px;
+  right: 10px;
+ }
+
+
+
+.dropit .dropit-open .dropit-submenu::after {
   content: " ";
   position: absolute;
   border-style: solid;
@@ -44,6 +70,11 @@
   z-index: 1;
   top: -8px;
   right: 10px;
+ }
+
+
+ #menu-settings .setting-menu .dropit-submenu::after {
+   padding-top: 100px;
  }
  .dropit .dropit-open .dropit-submenu li {
   display: block;
@@ -70,7 +101,7 @@
   .account-menu.dropit .dropit-trigger {
       position: relative; }
 
-  .account-menu.dropit .dropit-submenu {
+.account-menu.dropit .dropit-submenu {
       position: absolute;
       top: -550%;
       right: 0; /* dropdown left or right */
@@ -117,10 +148,4 @@
     text-decoration: none;
     font-family: "Didact Gothic", Helvetica, Arial, sans-serif;
     font-weight:100;
-   }
-
-.setting-menu  {
-     position: absolute;
-     top: -100px;
-     left: -80px;
    }
